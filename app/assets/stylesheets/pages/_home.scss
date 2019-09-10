@@ -12,18 +12,36 @@ li a{
 }
 
 .banner {
-  background-image: url("https://images.unsplash.com/photo-1486428263684-28ec9e4f2584?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1534&q=80");
-  height: 50vh;
+  height: 100vh;
+  background-image: url("https://images.unsplash.com/photo-1557420286-bacad24b4d51?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"), linear-gradient(rgb(30, 30, 30), #d13531);
+  display: flex;
+  background-size: cover;
+  justify-content: center;
+  align-items: center;
 }
 
 .banner-content {
   text-align: center;
-  vertical-align: middle;
+  color: #fff;
+  font-weight: lighter;
+}
+
+.banner-btn {
+  text-decoration: none;
+  width: 200px;
 }
 
 .banner-btn a {
-  color: #fff !important;
+   color: #fff !important;
+}
+
+.banner-btn a:hover {
   text-decoration: none;
 }
 
-
+#banner-heading {
+  padding-bottom: 5px;
+  font-size: 60px;
+  color: #fff;
+  font-weight: bold;
+}
