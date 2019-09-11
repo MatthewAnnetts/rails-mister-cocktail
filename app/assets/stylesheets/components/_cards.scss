@@ -1,5 +1,6 @@
 .card-heading {
   text-align: center;
+  padding-top: 15px;
 }
 
 .card-heading:hover {
@@ -7,11 +8,16 @@
 }
 
 .cards {
-  width: 410px;
+  width: 404px;
   margin: 30px 30px;
+  border: 2px solid rgb(200, 200, 200);
+  border-radius: 5px;
+  box-shadow: 2px 1px rgb(220, 220, 220);
 }
 
 .cocktail-img {
-  margin: 0 auto;
+}
 
+.card-text {
+  padding: 20px;
 }
