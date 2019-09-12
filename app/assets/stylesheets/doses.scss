@@ -20,6 +20,8 @@
   justify-content: center;
   align-items: center;
   position: fixed;
+  background-color: rgba(200, 200, 200, 0.3);
+  width: 550px;
 }
 
 .dose-text {
@@ -35,6 +37,20 @@
   margin-top: 10px;
 }
 
-// #btn-list {
-//   margin: 0;
-// }
+.nil-text {
+  color: #fff;
+  text-align: center !important;
+}
+
+.nil-container {
+  // display: flex;
+  // justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  background-color: rgba(200, 200, 200, 0.3);
+}
+
+.show-img {
+  margin-bottom: 30px;
+}

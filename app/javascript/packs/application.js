@@ -16,5 +16,10 @@ import 'bootstrap';
 //
 // const images = require.context('../images', true)
 // const imagePath = (name) => images(name, true)
+import { initSweetalert } from '../plugins/init_sweetalert';
 
-console.log('Hello World from Webpacker')
+initSweetalert('#sweet-alert', {
+  title: "A nice alert",
+  text: "This is a great alert, isn't it?",
+  icon: "success"
+});
