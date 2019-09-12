@@ -1,22 +1,42 @@
 
+<div class="dose-container" style="background-image: url(https://images.unsplash.com/photo-1529604278261-8bfcdb00a7b9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=751&q=80); background-size: cover; height: -webkit-fill-available;">
+  <h1 id="show-heading"><%= @cocktail.name %></h1>
+  <div class="dose-content">
+      <% @cocktail.doses.each do |dose| %>
+      <div class="dose-text">
+        <%= dose.description %>
+      </div>
 
-<h1><%= @cocktail.name %></h1>
+      <p><strong>Ingredients needed:</strong> <%= dose.ingredient.name %></p>
 
-  <ul>
-    <% @cocktail.doses.each do |dose| %>
-    <li><%= dose.description %></li>
-    <li><%= dose.ingredient.name %></li>
-    <li><%= link_to "Delete dose", dose_path(dose),
-      method: :delete,
-      data: { confirm: "Are you sure?" },
-      class: "btn btn-danger home-link" %></li>
-  </ul>
-<% end %>
+      <%= cl_image_tag @cocktail.photo, width: 500, height: 300, crop: :fill %>
 
-  <%= cl_image_tag @cocktail.photo, width: 400, height: 300, crop: :fill %>
+      <ul id="btn-list">
+          <li>
+            <%= link_to "Add description", new_cocktail_dose_path(@cocktail), class: "btn btn-primary home-link"%>
+          </li>
+
+          <li>
+            <%= link_to "Back to list", cocktails_path, class: "btn btn-primary home-link" %>
+          </li>
+
+          <li>
+            <%= link_to "Delete dose", dose_path(dose),
+              method: :delete,
+              data: { confirm: "Are you sure?" },
+              class: "btn btn-danger" %>
+          </li>
+
+      </ul>
+
+  </div>
+  <% end %>
 
 
-<%= link_to "Add dose and ingredient", new_cocktail_dose_path(@cocktail), class: "btn btn-primary home-link"%>
-<%= link_to "Back to list", cocktails_path, class: "btn btn-primary home-link" %>
 
+
+
+
+
+</div>
 
