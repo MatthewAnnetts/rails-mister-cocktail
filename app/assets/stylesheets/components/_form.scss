@@ -1,0 +1,22 @@
+.add-form {
+  width: 70%;
+  height: 30%;
+  margin: 0 auto;
+  color: rgb (80, 80, 80);
+  font-weight: lighter;
+  background-color: rgba(250, 250, 250, 0.5);
+  padding: 30px 30px;
+}
+
+.home-link {
+  color: #fff;
+  text-decoration: none;
+  margin-left: 15px;
+}
+
+.form-container {
+  height: -webkit-fill-available;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

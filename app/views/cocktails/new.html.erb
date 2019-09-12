@@ -1,8 +1,16 @@
-<%= simple_form_for [@cocktail] do |f| %>
-  <%= f.input :name %>
-  <%= f.input :photo %>
-  <%= f.input :photo_cache, as: :hidden %>
-  <%= f.submit "Add a cocktail", class: "btn btn-primary" %>
-<% end %>
+<div class="form-container" style="background-image: url(https://images.unsplash.com/photo-1566417713935-c0ed71ddd384?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60); background-size: cover; object-fit: contain; width: 100%;">
 
-<p><%= link_to "Back to list", cocktails_path  %></p>
+  <div class="add-form">
+
+    <%= simple_form_for [@cocktail] do |f| %>
+      <%= f.input :name, label: 'Name of cocktail' %>
+      <%= f.input :photo, label: 'Upload a photo' %>
+      <%= f.input :photo_cache, as: :hidden %>
+      <%= f.submit "Add cocktail", class: "btn btn-primary" %>
+      <%= link_to "Back to list", cocktails_path, class: "btn btn-primary home-link"%>
+    <% end %>
+
+  </div>
+
+
+</div>
