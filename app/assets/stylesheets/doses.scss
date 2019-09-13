@@ -12,6 +12,9 @@
 
 .dose-container {
   color: rgb(200, 200, 200);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .dose-content {
@@ -43,13 +46,17 @@
 }
 
 .nil-container {
-  // display: flex;
-  // justify-content: center;
+  display: flex;
+  justify-content: center;
   flex-direction: column;
   align-items: center;
-  background-color: rgba(200, 200, 200, 0.3);
 }
 
 .home-link-nil {
   margin: 15px 15px;
+}
+
+.btn-container {
+  display: flex;
+  justify-content: center;
 }

@@ -6,11 +6,11 @@
     <div class="nil-container">
       <p class="nil-text">Add a description and ingredient</p>
       <%= cl_image_tag @cocktail.photo, width: 500, height: 300, crop: :fill %>
-
+          <div class="btn-container">
             <%= link_to "Add description", new_cocktail_dose_path(@cocktail), class: "btn btn-primary home-link-nil"%>
 
             <%= link_to "Back to list", cocktails_path, class: "btn btn-primary home-link-nil" %>
-
+          </div>
     </div>
 
     <% else %>
