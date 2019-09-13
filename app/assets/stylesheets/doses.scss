@@ -32,6 +32,7 @@
   font-weight: lighter;
   text-align: center;
   padding-bottom: 10px;
+  color: #fff;
 }
 
 #btn-list li {
@@ -59,4 +60,10 @@
 .btn-container {
   display: flex;
   justify-content: center;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.btn-container a {
+  margin-right: 15px;
 }
